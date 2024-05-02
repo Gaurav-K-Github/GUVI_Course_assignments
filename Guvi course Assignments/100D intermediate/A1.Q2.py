@@ -1,46 +1,40 @@
-# Write a program that takes a list of names as input and sorts them in alphabetical order using a sorting algorithm of your choice.
+# Implement a function that takes a list of integers as input and returns the sum of the list. Handle the TypeError exception if a non-integer value is encountered.
 
 # Input:
 
-# The input consists of an integer n (1 <= n <= 1000) representing the number of names in the list, followed by n lines each containing a name. Each name consists of at most 100 characters and contains only uppercase and lowercase English letters.
+# The input consists of a list of integers.
 
 # Output:
 
-# Output the sorted list of names in alphabetical order, one name per line.
+# Return an integer representing the sum of the list.
 
 # Sample Input:
 
-# 3
-# John
-# Alice
-# Bob
+# 1 2 3 4 5
 
 # Sample Output:
 
-# Alice
-# Bob
-# John
-  
+# 15
+
 #==============================================================================================
 
 # -----------
 # Source code:
 # -----------
 
-def sort_names(names):
-  # Sort the list of names in alphabetical order
-  sorted_names = sorted(names)
-  return sorted_names
+def sum_list(numbers):
+  total = 0
+  for num in numbers:
+      try:
+          total += num
+      except TypeError:
+          # Handle the TypeError exception
+          return "Invalid input: Non-integer value found"
+  return total
 
-# Taking input for the number of names
-n = int(input())
+# Taking input for the list of integers
+numbers = list(map(int, input().split()))
 
-# Taking input for the list of names
-names = [input() for _ in range(n)]
-
-# Calling the function to sort the names
-sorted_names = sort_names(names)
-
-# Printing the sorted list of names
-for name in sorted_names:
-  print(name)
+# Calling the function and printing the result
+result = sum_list(numbers)
+print(result)
