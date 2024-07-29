@@ -3,6 +3,7 @@
 // Create a C program that calculates the factorial of a number using the goto statement. The twist is to implement error handling for negative inputs using the goto statement to jump to an error handling section.
 
 // Description:
+
 // The program should prompt the user to enter a number.
 // If the number is negative, use goto to jump to an error message.
 // If the number is positive, calculate the factorial using a loop and goto.717580
