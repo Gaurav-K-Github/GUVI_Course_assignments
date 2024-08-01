@@ -1,4 +1,5 @@
-# You are given a list of integers. Perform the following operations on the NumPy arrays
+# You are given a list of integers. Perform the following operations on the NumPy arrays:
+
 # Create a NumPy array from the given list.
 # Print the shape of the array.
 # Transpose the array.
