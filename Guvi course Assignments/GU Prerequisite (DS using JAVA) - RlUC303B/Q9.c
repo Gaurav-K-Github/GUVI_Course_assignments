@@ -21,6 +21,7 @@ Complex subtractComplex(Complex c1, Complex c2) {
     result.imag = c1.imag - c2.imag;
     return result;
 }
+
 // Function to print a complex number
 void printComplex(Complex c, char sign) {
     printf("%.1f %c %.1fi", c.real, sign, c.imag);
