@@ -46,5 +46,5 @@ def main():
     # Print the modified string
     print(modified_string)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
